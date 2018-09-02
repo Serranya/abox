@@ -1,0 +1,11 @@
+[Unit]
+Description=rxvt-unicode daemon
+
+[Service]
+PassEnvironment=RXVT_SOCKET
+Type=simple
+ExecStart=/usr/bin/urxvtd -q
+ExecStop=/usr/bin/urxvtc -k
+
+[Install]
+WantedBy=default.target
