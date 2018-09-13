@@ -21,7 +21,6 @@ pacman -Sy --needed --noconfirm htop \
 								keepassxc
 
 pacman -S hugo
-pacman -S --asdeps pygmentize
 ln -s /usr/share/applications/dropbox.desktop /etc/xdg/autostart/dropbox.desktop
 
 sed -i '/de_DE.UTF-8/s/^#//g' /etc/locale.gen
