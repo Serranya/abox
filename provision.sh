@@ -20,7 +20,7 @@ pacman -Sy --needed --noconfirm htop \
 								dex \
 								keepassxc
 
-pacman -S hugo
+pacman -S --noconfirm hugo
 ln -s /usr/share/applications/dropbox.desktop /etc/xdg/autostart/dropbox.desktop
 
 sed -i '/de_DE.UTF-8/s/^#//g' /etc/locale.gen
