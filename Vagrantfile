@@ -39,9 +39,9 @@ Vagrant.configure("2") do |config|
 		s.inline = "pacman -U --noconfirm /home/vagrant/aurutils/*.xz; rm -rf /home/vagrant/aurutils; echo \"Include = /etc/pacman.d/aurutils\" >> /etc/pacman.conf; install -d /var/cache/pacman/aurutils -o vagrant; repo-add /var/cache/pacman/aurutils/aurutils.db.tar; pacman -Syu"
 	end
 
-	config.vm.provision "install-from-aur", type: "shell", privileged: false do |s|
-		s.inline = "aursync -c dropbox"
-	end
+#	config.vm.provision "install-from-aur", type: "shell", privileged: false do |s|
+#		s.inline = "aursync -c dropbox"
+#	end
 
 	config.vm.provision "provision", type: "shell" do |s|
 	 s.path = "provision.sh"
