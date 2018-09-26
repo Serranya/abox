@@ -36,3 +36,4 @@ systemctl --user --global enable urxvtd.service
 #pacinstall --debug --noconfirm --remove virtualbox-guest-utils-nox --install virtualbox-guest-utils
 #The solution below works but is ugly because the package swap is not executed in a single transaction
 pacman --noconfirm -Rs virtualbox-guest-utils-nox; pacman --noconfirm -S virtualbox-guest-utils
+
