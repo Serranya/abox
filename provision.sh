@@ -14,11 +14,11 @@ pacman -Sy --needed --noconfirm htop \
                                 rxvt-unicode \
                                 ttf-dejavu \
                                 bash-completion \
-								i3status \
-								firefox-developer-edition \
-								firefox-developer-edition-i18n-de \
-								dex \
-								keepassxc
+                                i3status \
+                                firefox-developer-edition \
+                                firefox-developer-edition-i18n-de \
+                                dex \
+                                keepassxc
 
 pacman -S --noconfirm hugo
 ln -s /usr/share/applications/dropbox.desktop /etc/xdg/autostart/dropbox.desktop
