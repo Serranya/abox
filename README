@@ -1,0 +1,3 @@
+Copy your ssh public/private key into `user/.ssh`
+
+execute `vagrant up`
