@@ -5,6 +5,7 @@ ENV["LC_ALL"] = "en_US.UTF-8"
 
 Vagrant.configure("2") do |config|
 	config.vm.box = "archlinux/archlinux"
+	config.vm.box_version = "2018.11.05"
 
 	config.vm.box_check_update = false
 	config.vbguest.auto_update = false
@@ -23,7 +24,7 @@ Vagrant.configure("2") do |config|
 	end
 
 	config.vm.provision "provision-build-tools", type: "shell" do |s|
-		s.inline = "pacman -S --noconfirm --needed sudo base-devel git; pacman -S --noconfirm --needed --asdeps jq pacutils devtools"
+		s.inline = "pacman -S --noconfirm --needed sudo base-devel git; pacman -S --noconfirm --needed --asdeps jq pacutils devtools expac diffstat parallel wget"
 	end
 
 	config.vm.provision "copy files", type: "file" , source: "root", destination: "root"
