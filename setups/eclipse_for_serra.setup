@@ -8,7 +8,7 @@
     name="de.serra.eclipse"
     label="Eclipse for Serra">
   <version name="eclipse"
-      label="Latest (2018-10)"
+      label="Latest (2018-12)"
       requiredJavaVersion="1.11">
     <setupTask
         xsi:type="setup:CompoundTask"
@@ -100,7 +100,7 @@
       <requirement
           name="org.eclipse.oomph.setup.feature.group"/>
       <repository
-          url="http://download.eclipse.org/releases/2018-10"/>
+          url="http://download.eclipse.org/releases/2018-12"/>
       <repository
           url="https://dl.bintray.com/eclipse-cs/eclipse-cs/8.12.0/"/>
       <repository
