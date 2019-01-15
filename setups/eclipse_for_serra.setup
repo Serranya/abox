@@ -96,6 +96,8 @@
       <requirement
           name="com.basistech.m2e.code.quality.spotbugs.feature.feature.group"/>
       <requirement
+          name="jdt-codemining-feature.feature.group"/>
+      <requirement
           name="org.eclipse.oomph.setup.feature.group"/>
       <repository
           url="http://download.eclipse.org/releases/2018-10"/>
@@ -105,6 +107,8 @@
           url="https://spotbugs.github.io/eclipse/"/>
       <repository
           url="https://m2e-code-quality.github.io/m2e-code-quality-p2-site/"/>
+      <repository
+          url="http://oss.opensagres.fr/jdt-codemining/snapshot/"/>
       <repository
           url="${oomph.update.url}"/>
     </setupTask>
