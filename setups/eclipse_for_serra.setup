@@ -8,8 +8,8 @@
     name="de.serra.eclipse"
     label="Eclipse for Serra">
   <version name="eclipse"
-      label="Latest (2018-09)"
-      requiredJavaVersion="1.10">
+      label="Latest (2018-10)"
+      requiredJavaVersion="1.11">
     <setupTask
         xsi:type="setup:CompoundTask"
         name="User Preferences">
@@ -98,7 +98,7 @@
       <requirement
           name="org.eclipse.oomph.setup.feature.group"/>
       <repository
-          url="http://download.eclipse.org/releases/2018-09"/>
+          url="http://download.eclipse.org/releases/2018-10"/>
       <repository
           url="https://dl.bintray.com/eclipse-cs/eclipse-cs/8.12.0/"/>
       <repository
@@ -108,7 +108,7 @@
       <repository
           url="${oomph.update.url}"/>
     </setupTask>
-    <description>Eclipse for Serra for 2018-09.</description>
+    <description>Eclipse for Serra based on Eclipse 2018-10.</description>
   </version>
   <description>Eclipse for Serra provides some cool plugins and preferences</description>
 </setup:Product>
