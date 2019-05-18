@@ -8,7 +8,7 @@
     name="de.serra.eclipse"
     label="Eclipse for Serra">
   <version name="eclipse"
-      label="Latest (2018-12)"
+      label="Latest (2019-03)"
       requiredJavaVersion="1.11">
     <setupTask
         xsi:type="setup:CompoundTask"
@@ -100,9 +100,9 @@
       <requirement
           name="org.eclipse.oomph.setup.feature.group"/>
       <repository
-          url="http://download.eclipse.org/releases/2018-12"/>
+          url="http://download.eclipse.org/releases/2019-03"/>
       <repository
-          url="https://dl.bintray.com/eclipse-cs/eclipse-cs/8.12.0/"/>
+          url="https://dl.bintray.com/eclipse-cs/eclipse-cs/8.18.0/"/>
       <repository
           url="https://spotbugs.github.io/eclipse/"/>
       <repository
