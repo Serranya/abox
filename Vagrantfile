@@ -5,7 +5,6 @@ ENV["LC_ALL"] = "en_US.UTF-8"
 
 Vagrant.configure("2") do |config|
 	config.vm.box = "archlinux/archlinux"
-	config.vm.box_version = "2018.11.05"
 
 	config.vm.box_check_update = false
 	config.vbguest.auto_update = false
