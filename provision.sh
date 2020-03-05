@@ -18,8 +18,9 @@ pacman -Sy --needed --noconfirm htop \
                                 firefox-developer-edition \
                                 firefox-developer-edition-i18n-de \
                                 dex \
-                                keepassxc \
-                                jre-openjdk
+                                jre-openjdk \
+                                pass \
+                                khard
 
 pacman -S --noconfirm hugo
 ln -s /usr/share/applications/dropbox.desktop /etc/xdg/autostart/dropbox.desktop
