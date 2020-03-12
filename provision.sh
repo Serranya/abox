@@ -6,7 +6,7 @@ set -o nounset
 
 # dropbox
 pacman -Sy --needed --noconfirm htop \
-                                vim \
+                                neovim \
                                 xorg \
                                 xorg-xinit \
                                 i3-wm \
