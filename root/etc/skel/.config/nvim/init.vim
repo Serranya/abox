@@ -26,6 +26,10 @@ set incsearch                            " incremental searching
 set ignorecase                           " search is case insensitive...
 set smartcase                            " ... unless you use at least one capital letter
 
+" Style
+set termguicolors                        " 24-bit RGB color support
+
+"" Use ripgrep if available
 if executable('rg')
 	set grepprg=rg\ --color=never         " Use ripgrep if available
 endif

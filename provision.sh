@@ -15,7 +15,7 @@ pacman -Sy --needed --noconfirm htop \
                                 xorg-xinit \
                                 i3-wm \
                                 dmenu \
-                                rxvt-unicode \
+                                alacritty \
                                 ttf-dejavu \
                                 bash-completion \
                                 i3status \
