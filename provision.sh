@@ -4,6 +4,8 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+ACCOUNT="serra"
+
 # dropbox
 pacman -Sy --needed --noconfirm htop \
                                 ripgrep \
@@ -34,12 +36,12 @@ localectl set-keymap de
 localectl set-x11-keymap de
 timedatectl set-timezone Europe/Berlin
 
-useradd --create-home --shell /bin/bash serra
-cd /vagrant/user && find . -type f -exec install -v -D -o serra -g serra "{}" "/home/serra/{}" \;
-find /home/serra/.ssh/ -type f -exec chmod 600 "{}" \;
-find /home/serra/.ssh/ -type f -name \*.pub -exec chmod 644 "{}" \;
-chown serra: /home/serra/.ssh
-chmod 700 /home/serra/.ssh
+useradd --create-home --shell /bin/bash "${ACCOUNT}"
+cd /vagrant/user && find . -type f -exec install -v -D -o "${ACCOUNT}" -g "${ACCOUNT}" "{}" "/home/${ACCOUNT}/{}" \;
+find /home/${ACCOUNT}/.ssh/ -type f -exec chmod 600 "{}" \;
+find /home/${ACCOUNT}/.ssh/ -type f -name \*.pub -exec chmod 644 "{}" \;
+chown ${ACCOUNT}: /home/${ACCOUNT}/.ssh
+chmod 700 /home/${ACCOUNT}/.ssh
 
 systemctl --user --global enable urxvtd.service
 #TODO WTF: works when _I_ execute it. Vagrant gives me: "error: clould not locate package 'exit'" ??!?!?
