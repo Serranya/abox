@@ -6,6 +6,8 @@ set -o nounset
 
 # dropbox
 pacman -Sy --needed --noconfirm htop \
+                                ripgrep \
+                                fzf \
                                 neovim \
                                 xorg \
                                 xorg-xinit \
