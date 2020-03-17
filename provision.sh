@@ -24,7 +24,8 @@ pacman -Sy --needed --noconfirm htop \
                                 dex \
                                 jre-openjdk \
                                 pass \
-                                khard
+                                khard \
+                                fish
 
 pacman -S --noconfirm hugo
 ln -s /usr/share/applications/dropbox.desktop /etc/xdg/autostart/dropbox.desktop
@@ -36,7 +37,7 @@ localectl set-keymap de
 localectl set-x11-keymap de
 timedatectl set-timezone Europe/Berlin
 
-useradd --create-home --shell /bin/bash "${ACCOUNT}"
+useradd --create-home --shell /bin/fish "${ACCOUNT}"
 cd /vagrant/user && find . -type f -exec install -v -D -o "${ACCOUNT}" -g "${ACCOUNT}" "{}" "/home/${ACCOUNT}/{}" \;
 find /home/${ACCOUNT}/.ssh/ -type f -exec chmod 600 "{}" \;
 find /home/${ACCOUNT}/.ssh/ -type f -name \*.pub -exec chmod 644 "{}" \;
