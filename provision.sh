@@ -17,7 +17,6 @@ pacman -Sy --needed --noconfirm htop \
                                 dmenu \
                                 alacritty \
                                 ttf-dejavu \
-                                bash-completion \
                                 i3status \
                                 firefox-developer-edition \
                                 firefox-developer-edition-i18n-de \
